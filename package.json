@@ -2,7 +2,10 @@
   "name": "mini-e-commerce",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "lint": "nx run-many --target=lint --all",
+    "lint:fix": "nx run-many --target=lint --fix --all"
+  },
   "private": true,
   "dependencies": {
     "core-js": "^3.6.5",
@@ -42,6 +45,7 @@
     "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsx-a11y": "6.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "7.30.1",
     "eslint-plugin-react-hooks": "4.6.0",
     "jest": "27.5.1",
