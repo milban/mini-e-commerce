@@ -1,6 +1,6 @@
 {
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/user-web/src",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/apps/user-web/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,15 +9,15 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/packages/user-web",
-        "index": "packages/user-web/src/index.html",
+        "outputPath": "dist/packages/apps/user-web",
+        "index": "packages/apps/user-web/src/index.html",
         "baseHref": "/",
-        "main": "packages/user-web/src/main.tsx",
-        "polyfills": "packages/user-web/src/polyfills.ts",
-        "tsConfig": "packages/user-web/tsconfig.app.json",
+        "main": "packages/apps/user-web/src/main.tsx",
+        "polyfills": "packages/apps/user-web/src/polyfills.ts",
+        "tsConfig": "packages/apps/user-web/tsconfig.app.json",
         "assets": [
-          "packages/user-web/src/favicon.ico",
-          "packages/user-web/src/assets"
+          "packages/apps/user-web/src/favicon.ico",
+          "packages/apps/user-web/src/assets"
         ],
         "styles": [],
         "scripts": [],
@@ -33,8 +33,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "packages/user-web/src/environments/environment.ts",
-              "with": "packages/user-web/src/environments/environment.prod.ts"
+              "replace": "packages/apps/user-web/src/environments/environment.ts",
+              "with": "packages/apps/user-web/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -50,15 +50,15 @@
       "executor": "@nrwl/web:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "user-web:build",
+        "buildTarget": "apps-user-web:build",
         "hmr": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "user-web:build:development"
+          "buildTarget": "apps-user-web:build:development"
         },
         "production": {
-          "buildTarget": "user-web:build:production",
+          "buildTarget": "apps-user-web:build:production",
           "hmr": false
         }
       }
@@ -67,14 +67,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["packages/user-web/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["packages/apps/user-web/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/user-web"],
+      "outputs": ["coverage/packages/apps/user-web"],
       "options": {
-        "jestConfig": "packages/user-web/jest.config.ts",
+        "jestConfig": "packages/apps/user-web/jest.config.ts",
         "passWithNoTests": true
       }
     }

@@ -2,8 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "libs-product": "packages/libs/product",
-    "user-web": "packages/user-web",
-    "user-web-e2e": "packages/user-web-e2e"
+    "apps-user-web": "packages/apps/user-web",
+    "apps-user-web-e2e": "packages/apps/user-web-e2e",
+    "libs-product": "packages/libs/product"
   }
 }
