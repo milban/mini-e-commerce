@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
-  displayName: 'product',
-  preset: '../../jest.preset.js',
+  displayName: 'libs-product',
+  preset: '../../../jest.preset.js',
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
@@ -11,5 +11,5 @@ export default {
     '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/packages/product',
+  coverageDirectory: '../../../coverage/packages/libs/product',
 };

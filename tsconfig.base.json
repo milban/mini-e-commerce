@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mini-e-commerce/product": ["packages/product/src/index.ts"]
+      "@mini-e-commerce/libs-product": ["packages/libs/product/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
