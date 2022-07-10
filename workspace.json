@@ -2,6 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "product": "packages/product"
+    "product": "packages/product",
+    "user-web": "packages/user-web",
+    "user-web-e2e": "packages/user-web-e2e"
   }
 }
