@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "apps-remote-api": "packages/apps/remote-api",
     "apps-user-web": "packages/apps/user-web",
     "apps-user-web-e2e": "packages/apps/user-web-e2e",
     "libs-product": "packages/libs/product"
